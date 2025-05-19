@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Monster Hunt Emporium</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="assets/dragon.png" alt="logo" id="header-img" />
+        <h1 class="bebas-neue-regular">Monster Hunt Emporium</h1>
+        <ul class="bebas-neue-regular">
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#order-form">order-form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="center">
+        <h2 id="">Menu</h2>
+        <article>
+          <img
+            src="https://i0.wp.com/tokyotreatblog.wpcomstaging.com/wp-content/uploads/2025/01/anime-food-howl-s-moving-castle-thumbnail.webp?fit=1024%2C554&ssl=1"
+            alt="Bacon and eggs"
+          />
+          <h3>Soul Eggs And Bacon</h3>
+          <p class="menu-description-container">
+            Hearty griffin eggs paired with tender hog bacon, cooked over Calcifer's flames in our castle's enchanted
+            kitchen, filling the air with warmth and
+            comfort........................................................................$6.99
+          </p>
+          <hr />
+        </article>
+        <article>
+          <img
+            src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/10/ramen-the-rolling-girls-01-01.png"
+            alt="monster ramen"
+          />
+          <h3>Ramen Thunder Eel</h3>
+          <p class="menu-description-container">
+            This monster thunder Eel ramen bowl is an overflowing mountain of noodles, tender meat, and rich broth,
+            piled so high it defies gravity and logic. Its exaggerated size and absurd abundance capture the
+            over-the-top energy and whimsy of anime food fantasy, making it as much a spectacle as a meal. Simmered with
+            scallions, fishcakes, and
+            seaweed.........................................................................................$10.99
+          </p>
+          <hr />
+        </article>
+        <article>
+          <img
+            src="https://wallpapersok.com/images/high/anime-pancakes-hid8ybou70ziwyf7.jpg"
+            alt="monster pengu pancakes"
+          />
+          <h3>
+            <p>Strawberry Ice Penguin Pancakes</p>
+          </h3>
+          <p class="menu-description-container">
+            This towering stack of fluffy strawberry pengu pancakes is decadently topped with whipped cream, syrup,
+            juicy strawberries, and scoops of pink ice cream that melt into sugary pools. Adorable animal-shaped sweets
+            peek out from the sides, turning the dish into a playful, dreamy dessert straight out of a cozy
+            slice-of-life scene.............................$8.00
+          </p>
+          <hr />
+        </article>
+      </section>
+      <section class="center">
+        <form>
+          <h2 id="order-form">Place Your Order</h2>
+          <label for="food-choice">Food Item: </label>
+
+          <select name="food-choice" id="food-choice">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="Soul Eggs And Bacon">Soul Eggs And Bacon</option>
+            <option value="Ramen Thunder Eel">Ramen Thunder Eel</option>
+            <option value="Strawberry Ice Penguin Pancakes">Strawberry Ice Penguin Pancakes</option>
+          </select>
+
+          <br /><br />
+          <label for="food-quantity">Food Quantity: </label>
+          <input type="number" name="food-quantity" id="food-quantity" min="0" />
+          <br /><br />
+
+          Add ons:<br /><br />
+          <input type="checkbox" name="eggs" value="eggs" />eggs<br />
+          <input type="checkbox" name="syrup" value="syrup" />syrup<br />
+          <input type="checkbox" name="fire-fox-spice" value="fire-fox-spice" />fire fox spice<br />
+          <input type="checkbox" name="unicorn-horn-flakes" value="unicorn-horn-flakes" />Unicorn horn flakes<br />
+          <input type="checkbox" name="sea-serpent" value="sea-serpent" />sea serpent <br />
+          <input type="checkbox" name="chocolate-fudge" value="chocolate-fudge" />chocolate fudge <br />
+          <input type="checkbox" name="mongo-pork" value="mongo-pork" />mongo pork <br />
+          <input type="checkbox" name="mootank-beef" value="mootank-beef" />mootank beef<br />
+
+          <br />
+          <label for="special-request">Special requests:</label><br />
+          <textarea id="special-request" rows="7" cols="42" placeholder="Enter your request"></textarea>
+          <br /><br />
+          <input type="submit" value="Go To Checkout" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Made with love by <bold>moondoggy</bold></p>
+    </footer>
+  </body>
+</html>
